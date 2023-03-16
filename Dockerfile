@@ -1,4 +1,4 @@
-FROM python:slim-bullseye
+FROM python:3.9-slim-buster
 RUN apt update -qq -y && apt install -qq -y git
 RUN git clone https://github.com/NeuralRealm/StableFusion
 WORKDIR StableFusion
